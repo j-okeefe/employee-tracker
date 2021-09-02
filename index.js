@@ -2,7 +2,6 @@ const inquirer = require("inquirer");
 const mysql = require("mysql");
 require("console.table");
 const db = require("./db");
-const { connection } = require("./db");
 
 const connection = mysql.createConnection({
   host: "localhost",
@@ -11,7 +10,6 @@ const connection = mysql.createConnection({
   password: "6Epecha$",
   database: "employees_db",
 });
-
 
 start();
 
